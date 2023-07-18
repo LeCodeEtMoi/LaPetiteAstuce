@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html id="page">
+   <head>
+      <title>LaPetieAstuce</title>
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <meta charset="utf-8">
+      <link rel="stylesheet" type="text/css" href="normalize.css">
+      <link href="css/css.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      
+      <nav>
+         <span class="logo">LaPetiteAstuce</span>
+         <ul>
+            <li><a href="astuce.html">Astuce</a></li>
+            <li><a href="home.html">À propos</a></li>
+         </ul>
+      </nav>
+
+      <div class="container">
+         <h1>Astuce</h1><br>
+        
+         
+         <div class="image-with-text">
+            <img src="Image/alienBlue.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                 <a href=""> Astuce 1 Comment créé un dépot Gitub </a><br>
+
+               </div>
+            </div>
+         </div>
+         <div class="image-with-text">
+            <img src="Image/alienGreen.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  <h3> Étape 1 : Se conecter a son compte Github . </h3>
+                  Cliquer sur le bouton + en à gauche puis sur "New répositorie"<br>
+                  Donnez-lui un nom approprié et définissez les options de visibilité (public ou private) selon vos besoins.<br>
+                  Initialisez votre dépôt : Vous pouvez choisir d'initialiser votre dépôt avec un fichier README.md et/ou un fichier.gitignore.<br>  Ces fichiers peuvent être utiles pour fournir des informations sur votre projet et ignorer certains fichiers dans le suivi de version. 
+               </div>
+            </div>
+         </div>
+         <div class="image-with-text">
+            <img src="Image/alienGreen.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  <h3>Étape 2 : Clonez le dépôt localement </h3> 
+                  Sur votre ordinateur, ouvrez une interface en ligne de commande (terminal) et naviguez vers l'emplacement où vous souhaitez cloner le dépôt.<br>
+
+               </div>
+            </div>
+         </div>
+                   <div class="image-with-text">
+            <img src="Image/ghost.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+             Pour rappel on utilise la commande cd pour ce déplacer  . 
+          </div>
+       </div>
+    </div>
+                <div class="image-with-text">
+            <img src="Image/alienGreen.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+
+             Utilisez la commande git clone suivie de l'URL de votre dépôt pour le cloner localement.
+
+                  
+
+                  </div>
+            </div>
+         </div>
+                  <div class="image-with-text">
+            <img src="Image/bee.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                   <div> Exemple : git clone https://github.com/votre-utilisateur/votre-depot.git </div> <br>
+
+                  Maintenant que vous l'avez clonnez ajouter vos fichier . 
+
+                  <b>Puis les commande dans l'orde sans rien et avec la bonne orthographe</b><br>
+
+                  <div class="code"><li>git add .</li></div>
+                  <div class="code"><li>git commit -m "Votre message de commit"</li></div>
+                  <div class="code"><li>git push origin main</li></div> <br>
+
+                  </div>
+               </div>
+            </div>
+
+               <div class="image-with-text">
+            <img src="Image/bee.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  Il est possible que la branche mère n'est pas forcement main 
+
+                  <div class="code"><li>git remote add origin URL_du_dépôt distant</li></div>
+                     Assurez-vous de remplacer URL_du_dépôt distant par l'URL réelle de votre dépôt distant.
+
+                  <div class="code"><li>git remote add origin https://github.com/exemple</li></div>
+                  <div class="code"><li>git branch -M main</li></div>
+
+               </div>
+            </div>
+         </div>
+
+         <div class="image-with-text">
+            <img src="Image/alienGreen.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  <h3>Étape 3 : Générez un jeton d'accès personnel sur GitHub .</h3>
+                  Rendez-vous sur votre compte GitHub, cliquez sur votre avatar en haut à droite et sélectionnez "Settings" (Paramètres).<br>
+                  Dans le menu de gauche tout en bas , sélectionnez "Developer settings" (Paramètres du développeur), puis "Personal access tokens" (Jetons d'accès personnels).<br>
+                  Cliquez sur le bouton "Generate new token" (Générer un nouveau jeton).<br>
+                  Donnez un nom à votre jeton, sélectionnez les autorisations nécessaires (probablement "repo" pour accéder aux dépôts) et cliquez sur "Generate token" (Générer un jeton).<br>
+                  Copiez le jeton généré (veillez à le copier avant de quitter cette page, car il ne sera plus affiché ultérieurement).<br>
+               </div>
+            </div>
+         </div>
+         <div class="image-with-text">
+            <img src="Image/alienGreen.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  <h3>Étape 4 : Configurez Git pour utiliser le jeton d'accès personnel </h3>
+                  </div>
+            </div>
+         </div>
+                   <div class="image-with-text">
+            <img src="Image/bee.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  Dans votre terminal Git, exécutez la commande suivante pour configurer le nom d'utilisateur :
+                  <div class="code"><li>git config --global user.name "Votre nom d'utilisateur"</li></div>
+                  Exécutez la commande suivante pour configurer l'adresse e-mail associée à votre compte GitHub :
+                  <div class="code"><li>git config --global user.email "votre@email.com"</li></div>
+                  <div class="code"><li>git credential-manager-core configure</li></div>
+                   </div>
+            </div>
+         </div>
+         <div class="image-with-text">
+            <img src="Image/ghost.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  Si vous avez cette erreur :<div class="erreur"> git : 'credential-manager-core' n'est pas une commande git. Voir 'git --help'.</div><br>
+                  C'est qu'il semble que vous n'ayez pas le gestionnaire de credentials Git installé sur votre système.
+               </div>
+            </div>
+         </div>
+          <div class="image-with-text">
+            <img src="Image/alienGreen.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  <h3>Étape 5 : Clef SSH</h3>
+                  Pour résoudre ce problème, vous pouvez essayer d'utiliser une méthode alternative pour configurer vos credentials Git. Vous pouvez utiliser l'authentification SSH au lieu de l'authentification par mot de passe. Voici les étapes pour le faire :
+                  Générez une paire de clés SSH sur votre machine locale, si vous n'en avez pas déjà une.<br>
+                   </div>
+            </div>
+         </div>
+                  <div class="image-with-text">
+            <img src="Image/bee.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                   Vous pouvez utiliser la commande suivante : 
+                  <div class="code "><li>ssh-keygen -t rsa -b 4096 -C "votre_email@example.com"</li></div>
+                  <b>Assurez-vous de remplacer "votre_email@example.com" par votre propre adresse e-mail.</b>
+                  </div>
+            </div>
+         </div>
+          <div class="image-with-text">
+            <img src="Image/alienGreen.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  Suivez les instructions à l'écran pour générer la paire de clés.<br>
+                  Vous pouvez choisir de protéger votre clé privée par un mot de passe ou laisser vide si vous ne souhaitez pas en utiliser un.<br>
+                  Ajoutez votre clé publique SSH à votre compte GitHub.Il faut donc allez dans dossier personnels puis .ssh Copiez le contenu du fichier <b>id_rsa.pub(ou id_rsa.pub selon le nom que vous avez donné à votre clé)</b> à partir de votre répertoire SSH (généralement ~/.ssh) et collez-le dans les paramètres de clé SSH de votre compte GitHub.<br>
+                   </div>
+            </div>
+         </div>
+          <div class="image-with-text">
+            <img src="Image/bee.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  Configurez Git pour utiliser l'authentification SSH en mettant à jour l'URL de votre dépôt distant. Utilisez la commande suivante :
+                  <div class="code"><li>git remote set-url origin git@github.com:example/de/votre/dépot.git</li></div>
+                     Assurez-vous de remplacer example/de/votre/dépot.git par l'URL de votre dépôt GitHub.
+                  </div>
+            </div>
+         </div>
+                     <div class="image-with-text">
+            <img src="Image/ghost.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                     Verifier que vous êtes bien de votre dépot git ;) 
+                  </div>
+            </div>
+         </div>    
+                   <div class="image-with-text">
+            <img src="Image/ghost.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  Il est possible que vosu avez une erreur de se type : <div class="erreur"> To github.com:mon/example.git
+                   ! [rejected]        main -> main (fetch first)
+                  erreur : impossible de pousser des références vers 'github.com:mon/example.git'
+                  astuce: Les mises à jour ont été rejetées car la branche distante contient du travail que
+                  astuce: vous n'avez pas en local. Ceci est généralement causé par un autre dépôt poussé
+                  astuce: (par exemple 'git pull ...') avant de pousser à nouveau.
+                  astuce: Voir la 'Note à propos des avances rapides' dans 'git push --help' pour plus d'information </b>
+               </div>
+               </div>
+            </div>
+         </div>
+         <div class="image-with-text">
+            <img src="Image/bee.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  Pour résourde le problème  
+
+                  <div class="code"> <li>git pull origin main</li></div>
+
+                  </div>
+               </div>
+            </div>
+         
+            <div class="image-with-text">
+            <img src="Image/ghost.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  Vous allez avoir une autre erreur du genre : 
+                  <div class="erreur">
+                  emote: Enumerating objects: 3, done.
+                  remote: Counting objects: 100% (3/3), done.
+                  remote: Compressing objects: 100% (2/2), done.
+                  remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+                  Dépaquetage des objets: 100% (3/3), 794 octets | 794.00 Kio/s, fait.
+                  Depuis github.com:LeCodeEtMoi/Space
+                   * branch            main       -> FETCH_HEAD
+                  * [nouvelle branche] main       -> origin/main
+                  astuce: Vous avez des branches divergentes et vous devez spécifier comment
+                  astuce: les réconcilier. Vous pouvez le faire en lançant une des
+                  astuce: commandes suivantes avant votre prochain tirage :
+                  astuce:
+                  astuce:   git config pull.rebase false  # fusion
+                  astuce:   git config pull.rebase true   # rebasage
+                  astuce:   git config pull.ff only       # avance rapide seulement
+                  astuce:
+                  astuce: Vous pouvez remplacer "git config" par "git config --global" pour que
+                  astuce: ce soit l'option par défaut pour tous les dépôts. Vous pouvez aussi
+                  astuce: passer --rebase, --no-rebase ou --ff-only sur la ligne de commande pour
+                  astuce: remplacer à l'invocation la valeur par défaut configurée.
+                  fatal : Besoin de spécifier comment réconcilier des branches divergentes. <br>
+                  </div>
+
+                   </div>
+               </div>
+            </div>
+         
+                  <div class="image-with-text">
+            <img src="Image/alienGreen.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  Option 1: Fusionner (Merge)
+                  Exécutez la commande git merge origin/main. Cela fusionnera les modifications du dépôt distant dans votre branche main locale. Git tentera automatiquement de fusionner les modifications et créera un nouveau commit de fusion. <br>
+
+                  Option 2: Rebaser (Rebase)
+
+                  Exécutez la commande git pull --rebase origin main. Cela appliquera vos modifications locales par-dessus les modifications du dépôt distant. Git réappliquera vos commits locaux sur les commits du dépôt distant.<br>
+
+                  Option 3: Avance rapide (Fast-forward)
+                  Exécutez la commande git pull --ff-only origin main. Cela appliquera uniquement les modifications du dépôt distant si votre branche locale n'a pas de commits supplémentaires. Sinon, il générera une erreur.<br> 
+
+                  Je vous conseils de faire la 2 .
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+   
+   </body>
+</html>
