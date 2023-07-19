@@ -23,7 +23,19 @@
 
       <div class="container">
          <h1>Astuce</h1><br>
-        
+         
+         <div class="image-with-text">
+            <img src="Image/ghost.png" alt="Image">
+               <div class="card">
+                  <div class="card-content">
+                      <h3>Quelque petit rappel </h3>
+                      Je vous le rappel ou vous l'apprend mais pour : <br>
+                      coller dans le terminal on fait ctrl + shift + v<br>
+                      copier dans le terminal on fait ctrl + shift + c
+                </div>
+            </div>
+         </div>
+         <br>
        
          <div class="image-with-text">
             <img src="Image/alienGreen.png" alt="Image">
@@ -33,9 +45,11 @@
 
                  Il faut donc se connecter sur Github . <br>
                Une fois connecté sur Github aller sur le + en haut puis aller sur New repository .<br>
-               Choissir le nom de votre projet à validé  . 
+               Choissir le nom de votre projet à validé . 
 
-               Puis faire la commande suivante : 
+               Il nous faut à present préparé le terain , car si vous envisager d'avoir beaucoup de dépot i lest préférable de créé un dossier "Projet Github" ou par la suite nous mettrons nos projets . :) 
+
+               Il fois le terrain préparé nous allons faire la commande suivante : 
 
                </div>
             </div>
@@ -61,7 +75,7 @@
                <div class="card-content">
                  <h3>Étape 2 Créé une clef SSH</h3>
 
-                  Pour créé un clef SSH réaliser la commande suivante 
+                  
                </div>
             </div>
          </div>
@@ -70,7 +84,7 @@
             <img src="Image/bee.png" alt="Image">
             <div class="card">
                <div class="card-content">
-
+                     Pour créé un clef SSH réaliser la commande suivante 
                 <div class="code">ssh-keygen -t ed25519 -C "mon@mail.com"</div>
                </div>
             </div>
@@ -90,19 +104,21 @@
 
          <div class="image-with-text">
             <img src="Image/alienGreen.png" alt="Image">
-            <div class="card">
-               <div class="card-content">
-                 <h3>Étape 3 Créé une clef PGP</h3>
+               <div class="card">
+                  <div class="card-content">
+                      <h3>Étape 3 Créé une clef PGP</h3>
 
-                  Pourquoi créé un clef PGP : La PGP pemetra de signé vos commit prouvant que c'est bien vous qui la réalisé 
+                  Pourquoi créé un clef PGP : La clef PGP pemetra de signé vos commit prouvant que c'est bien vous qui la réalisé .
 
-                  Pour un créé la clef PGP , il nous faut aller sur notre Github Photo de profil > Setings(Paramètre) > Dans la colone de gauche "SSH and GPG keys" > New GPG key (Nouvelle clef GPG) 
+                  Pour un créé la clef PGP , il nous faut aller sur notre Github > Photo de profil > Setings(Paramètre) > Dans la colone de gauche "SSH and GPG keys" > New GPG key (Nouvelle clef GPG) 
 
 
 
                 </div>
             </div>
          </div>
+         <br>
+
            <div class="image-with-text">
             <img src="Image/bee.png" alt="Image">
             <div class="card">
@@ -111,7 +127,17 @@
                    Pour Arch Linux veulez tappez la mcommande pour installer GnuPG
                    <div class="code">udo pacman -S gnupg</div>
                    Une fois instalé nous allons généré une clef GPG avec la commande : 
-                   <div code>gpg --full-generate-key</div>
+                   <div class="code">gpg --full-generate-key</div>
+                   
+            </div>
+         </div>
+      </div>
+      <br>
+
+          <div class="image-with-text">
+            <img src="Image/alienGreen.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
                    Nous allons par la suite un certain nombre de questionne voila ce que nous allons répondre : <br>
                    Pour la clef désiré nous allons prendre soit la 10 pour juste avoir un signature soit la 9 pour avoir la signature plus d'autre sécurité<br>
                    Pour le type de courbe elliptique désiré nous allons prend la 1 <br>
@@ -121,7 +147,26 @@
                    Puis votre adresse mail et si vous le désirez un commentaire <br>
                    Une fois terminer que tout est bon ne metter pas Q mais bien O sinon allez doir tout recommencer !<br>
                    Il faut donc un mot de passe pour sécurisé le tout . Je vous consils de le généré par votre gestionnaire de mot de passe mais ne trainait pas trop si , vous devrait tout recommencer . <br>
-                   ENFIN , nous avons notre celf GPG dans /.gnupg/openpgp-revocs.d
+                     </div>
+         </div>
+      </div>
+      <br>
+                    <div class="image-with-text">
+            <img src="Image/bee.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+
+                   Il nous faut encore 2 commandes . Ce n'est pas comme la clef SSH , la on là que avec une ligne de commande .
+                   <div class="code">gpg --list-secret-keys --keyid-format=long</div>
+                   Recherchez la clé que vous souhaitez exporter et repérez l'empreinte, qui ressemble à une séquence de caractères hexadécimaux unique, généralement composée de 40 caractères.<br>
+                   Une fois trouvé la clef , vous mettez la commande : 
+                   <div class="code">gpg --armor --export <empreinte_clef></div>
+                     Remplacez bien le <empreinte_clef> par la séquance de caractère hexédécimaux !
+
+                        Voila nous avons notre clef , mais c'est pas finie ! Il nous faut la mettre sur Github . 
+           
+
+
                </div>
             </div>
          </div>
@@ -149,7 +194,7 @@
                   Cette commande nous permet de mettre dans un collie les fichier
 
                   <div class="code">git add .</div>
-                  Cette commande nous sert de maitre un commentaire ( une explication) au collie 
+                  Cette commande nous sert de mettre un commentaire ( une explication) au collie 
                   <div class="code">git commit -m "Initial commit"</div>
                   Cette commande nous permet de d'envoyer le colie su GIthub 
                   <div class="code">git push origine main</div>
@@ -162,6 +207,19 @@
             </div>
          </div>
 
+                  <div class="image-with-text">
+            <img src="Image/ghost.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                  <h3>Un problème ? </h3>
+                  Si vous rencontrez des problèmes lors de la création de votre dépot . La solution se trouve peut être ici <br>
+                  
+
+
+
+               </div>
+            </div>
+         </div>
 
                </div>
             </div>
