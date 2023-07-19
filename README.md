@@ -1,3 +1,3 @@
 # LaPetiteAstuce
 
-C'est moi qui est affiché ;
+Un petite site web sur github 

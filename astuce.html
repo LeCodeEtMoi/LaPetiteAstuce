@@ -33,7 +33,7 @@
 
                  Il faut donc se connecter sur Github . <br>
                Une fois connecté sur Github aller sur le + en haut puis aller sur New repository .<br>
-               Choissir le nom de votre projet valider . 
+               Choissir le nom de votre projet à validé  . 
 
                Puis faire la commande suivante : 
 
@@ -46,7 +46,7 @@
             <div class="card">
                <div class="card-content">
 
-                <div class="code"> git clone https://github.com/mon/dépot/</div>
+                <div class="code"> git clone git@github.com:le/nom/du/dépot.git</div>
 
                </div>
             </div>
@@ -71,7 +71,7 @@
             <div class="card">
                <div class="card-content">
 
-                <div class="code">ssh-keygen -t rsa -b 4096 -C "exemple@mail.com"</div>
+                <div class="code">ssh-keygen -t ed25519 -C "mon@mail.com"</div>
                </div>
             </div>
          </div>
@@ -84,6 +84,44 @@
                 Aller sur Github > settings >SSH and GPG keys > puis généré une clef <br>
 
 
+               </div>
+            </div>
+         </div>
+
+         <div class="image-with-text">
+            <img src="Image/alienGreen.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                 <h3>Étape 3 Créé une clef PGP</h3>
+
+                  Pourquoi créé un clef PGP : La PGP pemetra de signé vos commit prouvant que c'est bien vous qui la réalisé 
+
+                  Pour un créé la clef PGP , il nous faut aller sur notre Github Photo de profil > Setings(Paramètre) > Dans la colone de gauche "SSH and GPG keys" > New GPG key (Nouvelle clef GPG) 
+
+
+
+                </div>
+            </div>
+         </div>
+           <div class="image-with-text">
+            <img src="Image/bee.png" alt="Image">
+            <div class="card">
+               <div class="card-content">
+                   Il faut après généré la clef , mais pour ça il faut GnuPG . <br>
+                   Pour Arch Linux veulez tappez la mcommande pour installer GnuPG
+                   <div class="code">udo pacman -S gnupg</div>
+                   Une fois instalé nous allons généré une clef GPG avec la commande : 
+                   <div code>gpg --full-generate-key</div>
+                   Nous allons par la suite un certain nombre de questionne voila ce que nous allons répondre : <br>
+                   Pour la clef désiré nous allons prendre soit la 10 pour juste avoir un signature soit la 9 pour avoir la signature plus d'autre sécurité<br>
+                   Pour le type de courbe elliptique désiré nous allons prend la 1 <br>
+                   Pour le temps pendant lequel cette clef devrait être valable c'est à vous de choisir . Moi j'ai mis 2y ( 2 ans)
+                   Si tout est correcte metre O <br>
+                   Il faut après metre votre nom d'utilisateur Github <br>
+                   Puis votre adresse mail et si vous le désirez un commentaire <br>
+                   Une fois terminer que tout est bon ne metter pas Q mais bien O sinon allez doir tout recommencer !<br>
+                   Il faut donc un mot de passe pour sécurisé le tout . Je vous consils de le généré par votre gestionnaire de mot de passe mais ne trainait pas trop si , vous devrait tout recommencer . <br>
+                   ENFIN , nous avons notre celf GPG dans /.gnupg/openpgp-revocs.d
                </div>
             </div>
          </div>
@@ -105,14 +143,15 @@
             <div class="card">
                <div class="card-content">
                   Voici les commande à faire .<br>
-                  La commande n'est pas obligatoire mais elle est préférable pour un projet à long terme 
 
-                  <div class="code">git branch -M main</div>
+                  Explication des commande de fçon imager
 
-                  Les autre autre sont importante
+                  Cette commande nous permet de mettre dans un collie les fichier
 
                   <div class="code">git add .</div>
+                  Cette commande nous sert de maitre un commentaire ( une explication) au collie 
                   <div class="code">git commit -m "Initial commit"</div>
+                  Cette commande nous permet de d'envoyer le colie su GIthub 
                   <div class="code">git push origine main</div>
                   Voila normalement tout est bon 
                   
