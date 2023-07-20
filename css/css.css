@@ -27,7 +27,7 @@ nav ul li {
 nav ul li a {
   display: block;
   padding: 9px 20px;
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
@@ -112,11 +112,12 @@ h1 {
 
 .card-content a {
   display: inline-block;
-  background-color: #ccc;
-  color: #fff;
+  color: #e2346b;
   padding: 5px 10px;
   border-radius: 4px;
-  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  
 }
 
 .code {
