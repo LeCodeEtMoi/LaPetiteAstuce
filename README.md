@@ -1,3 +1,3 @@
 # LaPetiteAstuce
 
-Un petite site web sur github 
+Un petit site web sur github 
